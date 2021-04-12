@@ -1,15 +1,15 @@
 module.exports = (sequelize, DataTypes) => {
-    
+
     const Comentario = sequelize.define(
         'Comentario', {
-            nome: DataTypes.STRING
+            texto: DataTypes.STRING
         }, 
         {
-            tableComentario: "comentarios",
+            tableName: "comentarios",
             timestamps: false
         }
-    );
+
+    )
 
     return Comentario;
-
 }
